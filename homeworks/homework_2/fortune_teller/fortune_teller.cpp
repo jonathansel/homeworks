@@ -27,7 +27,7 @@ int main() {
     const array<string, 3UL> endings{"eats UB for breakfast", "finds errors quicker than the compiler","is not afraid of C++ error messages"};
 
     cout << "Welcome to the fortune teller program!"s << endl;
-    cout << "Please enter your name: " << endl;
+    cout << "Please enter your name:" << endl;
     string name{}; // Init empty
     cin >> name;   // Read name
     auto name_length{name.length()};
@@ -36,17 +36,18 @@ int main() {
     string season{}; // Init empty
     cin >> season;   // Read season
 
-    cout << "Please enter an adjective: " << endl;
+    cout << "Please enter an adjective:" << endl;
     string adjective{}; // Init empty
     cin >> adjective;   // Read adjective
     adjective_vec.emplace_back(adjective);
 
 
-    cout << "Please enter another adjective: " << endl;
+    cout << "Please enter another adjective:" << endl;
     string another_adjective{}; // Init empty
     cin >> another_adjective;   // Read adjevtive 2
-    adjective_vec.emplace_back(adjective);
+    adjective_vec.emplace_back(another_adjective);
 
+    cout << "Size of adj vector: " << adjective_vec.size() << endl;
     auto chosen_adjective = adjective_vec[name_length % adjective_vec.size()];
     auto chosen_noun = season_map.at(season);
     auto chosen_ending = endings[name_length % endings.size()];
