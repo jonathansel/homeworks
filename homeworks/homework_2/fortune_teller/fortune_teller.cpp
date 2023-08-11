@@ -21,7 +21,7 @@ int main() {
 
     const map<string, string> season_map = {{"spring", "STL guru"},
                                             {"summer", "C++ expert"},
-                                            {"autumn", "winter"},
+                                            {"autumn", "coding beast"},
                                             {"winter", "software design hero"}};
 
     const array<string, 3UL> endings{"eats UB for breakfast", "finds errors quicker than the compiler","is not afraid of C++ error messages"};
