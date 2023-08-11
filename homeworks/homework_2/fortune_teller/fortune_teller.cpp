@@ -27,7 +27,7 @@ int main() {
     const array<string, 3UL> endings{"eats UB for breakfast", "finds errors quicker than the compiler","is not afraid of C++ error messages"};
 
     cout << "Welcome to the fortune teller program!"s << endl;
-    cout << "Please enter your name: ";
+    cout << "Please enter your name: " << endl;
     string name{}; // Init empty
     cin >> name;   // Read name
     auto name_length{name.length()};
@@ -35,15 +35,14 @@ int main() {
     cout << "Please enter the time of year when you were born:\n(pick from 'spring', 'summer', 'autumn', 'winter')" << endl;
     string season{}; // Init empty
     cin >> season;   // Read season
-    // cout << "Chosen noun: " << season_map.at(season) << endl;
 
-    cout << "Please enter an adjective: ";
+    cout << "Please enter an adjective: " << endl;
     string adjective{}; // Init empty
     cin >> adjective;   // Read adjective
     adjective_vec.emplace_back(adjective);
 
 
-    cout << "Please enter another adjective: ";
+    cout << "Please enter another adjective: " << endl;
     string another_adjective{}; // Init empty
     cin >> another_adjective;   // Read adjevtive 2
     adjective_vec.emplace_back(adjective);
@@ -52,15 +51,7 @@ int main() {
     auto chosen_noun = season_map.at(season);
     auto chosen_ending = endings[name_length % endings.size()];
 
+    cout << "Here is your description:" << endl;
     cout << name << ", the " << chosen_adjective << " " << chosen_noun << " that " << chosen_ending << endl;
-
-
-
-
-
-
-
-
-
 
 }
