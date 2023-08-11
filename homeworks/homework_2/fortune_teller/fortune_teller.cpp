@@ -47,7 +47,6 @@ int main() {
     cin >> another_adjective;   // Read adjevtive 2
     adjective_vec.emplace_back(another_adjective);
 
-    cout << "Size of adj vector: " << adjective_vec.size() << endl;
     auto chosen_adjective = adjective_vec[name_length % adjective_vec.size()];
     auto chosen_noun = season_map.at(season);
     auto chosen_ending = endings[name_length % endings.size()];
