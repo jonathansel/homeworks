@@ -41,7 +41,6 @@ int main() {
     cin >> adjective;   // Read adjective
     adjective_vec.emplace_back(adjective);
 
-
     cout << "Please enter another adjective:" << endl;
     string another_adjective{}; // Init empty
     cin >> another_adjective;   // Read adjevtive 2
@@ -51,7 +50,7 @@ int main() {
     auto chosen_noun = season_map.at(season);
     auto chosen_ending = endings[name_length % endings.size()];
 
-    cout << "Here is your description:" << endl;
+    cout << "\nHere is your description:" << endl;
     cout << name << ", the " << chosen_adjective << " " << chosen_noun << " that " << chosen_ending << endl;
 
 }
