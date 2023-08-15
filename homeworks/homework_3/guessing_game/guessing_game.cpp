@@ -36,7 +36,7 @@ int main() {
         }
 
         if (guess > random_number) {
-            cout << "Your number is too big. Try again!!" << endl;
+            cout << "Your number is too big. Try again!" << endl;
             continue;
         }
 
