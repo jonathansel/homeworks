@@ -8,11 +8,11 @@ using std::endl;
 int main() {
     cout << "Welcome to the GUESSING GAME!\nI will generate a number and you will guess it!" << endl;
     int smallest{};
-    cout << "Please provide the smallest number: " << endl;
+    cout << "Please provide the smallest number:" << endl;
     cin >> smallest;
    
     int largest{};
-    cout << "Please provide the largest number: " << endl;
+    cout << "Please provide the largest number:" << endl;
     cin >> largest;
 
     std::random_device random_device;
@@ -41,7 +41,7 @@ int main() {
         }
 
         if (guess == random_number) {
-            cout << "You've done it! You guessed the number " << random_number << " in " <<  iterations << " guesses" << endl;
+            cout << "You've done it! You guessed the number " << random_number << " in " <<  iterations << " guesses!" << endl;
             break;
         }
     }
